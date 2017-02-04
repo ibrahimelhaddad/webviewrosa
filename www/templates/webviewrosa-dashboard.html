@@ -1,0 +1,31 @@
+	<ion-view view-title="Dashboard" hide-nav-bar="false" >
+		<!-- popover -->
+		<ion-nav-buttons side="right">
+			<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+		</ion-nav-buttons>
+		<!-- ./popover -->
+		<ion-nav-title>Dashboard</ion-nav-title>
+		<!-- content -->
+		<ion-content delegate-handle="top"   id="page-dashboard" class=" page-dashboard">
+		
+		<div class="dashboard-panel">
+			<div class="item item-title item-dark">Dashboard</div>
+			<!-- row -->
+			<div class="row">
+				<a class="col-33 light positive-bg ink" ng-click="openWebView('http://www.rosadama.com')" >
+					<i class="icon ion-android-favorite" ></i>
+					<p>home</p>
+				</a>
+				<a class="col-33 light positive-900-bg ink" ui-sref="webviewrosa.menu_2({:''})" >
+					<i class="icon ion-android-favorite" ></i>
+					<p>Menu 2</p>
+				</a>
+			</div>
+			<!-- ./row -->
+			
+
+		</div>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
